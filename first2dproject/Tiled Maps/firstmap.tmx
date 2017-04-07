@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="house" tilewidth="32" tileheight="32" tilecount="63">
+  <image source="../../RPG Resources/Outdoors/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="64" name="mountains" tilewidth="32" tileheight="32" tilecount="108">
+  <image source="../../RPG Resources/Outdoors/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="172" name="rock" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../RPG Resources/Outdoors/rock.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="174" name="signs" tilewidth="32" tileheight="32" tilecount="6">
+  <image source="../../RPG Resources/Outdoors/signs.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="180" name="treetop (1)" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../../RPG Resources/Outdoors/treetop (1).png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="222" name="treetop" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../../RPG Resources/Outdoors/treetop.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="264" name="trunk" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/trunk.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="282" name="water" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/water.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="300" name="waterfall" tilewidth="32" tileheight="32" tilecount="15">
+  <image source="../../RPG Resources/Outdoors/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="315" name="watergrass" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="333" name="bridges" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../../RPG Resources/Outdoors/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="375" name="dirt" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/dirt.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="dirt" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="393" name="grass" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="411" name="grassalt" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/grassalt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="429" name="hole" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/hole.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="447" name="holek" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/holek.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="465" name="holemid" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../RPG Resources/Outdoors/holemid.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="483" name="Red" tilewidth="32" tileheight="32" tilecount="1">
+  <image source="../../RPG Resources/Objects/Red.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0.166667" width="32" height="31.8333"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="484" name="barrel" tilewidth="32" tileheight="32" tilecount="8">
+  <image source="../../RPG Resources/Objects/barrel.png" width="128" height="64"/>
+ </tileset>
+ <layer name="Grass" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztV0sOxSAIrPdfdoOc9nVRkgn+EMVu3oLURGFgEKR3uq7bIfwIPZKd+ihih16xnpc1G/V6scg6D2Ka8fOGszt4QvxeDBq/tz+Lmxu2Wn4RfL050vlt8VnLHcHeDv4tPJ3AaXFU47jnE3K5WkceTgjEgx/Jd+s+R3A0m2uJ/WtfouPT3K/2sb+UMurtJ0Twv+qfegaJ4ME6V3iwUa+lb+HXGzfOY70eGZVjSqUvlrNRd2knt6hvuR9RbzjOUqfrlFM5p5/EF0xO/XeX4dyOHiL2rPnNTnwGXazfGRsEuKxsW/Or/5dm5i2cGzT+yAZiav6wL2MNoq+4X7ublhmXFYaV85Va+AEZFlRD
+  </data>
+ </layer>
+ <layer name="Path" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt1EsKwCAMBNB460Kr/WDvXd0FSaqLToSSgVk//CREHo/H8+/EQJSEWtlb6SnU2l5KMyvSTYJ9f2jyN92D7qJsbqwvbgbbUhGuZLf/KYNczUY4Wo6JNj+7hd3uS37vF8iOioecY26PzJTVv7aaKfSO7sXifns+aleOZJbr8dQ8AdFLVg==
+  </data>
+ </layer>
+ <layer name="pathdecals" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzdVm0OgCAIrft3gTxD3bG1xsYcCvJl8239sPAB8sC2bRzH/j14bYUHRwQic4P30bnX/BfzvWWXCYjpnKQLbU3efaPnhn1x+da9x/FJUZAWIYYi4KFy9ZgN0rpT/Dezp1cfqe6ievevc9AKriYUVj0LjNk5jvqXzDZNrQGS+abhzEKGr9b5WnxTdY24/2frnYNEu9ydZ+XX8IKdpfdWg4d+s/U64q9nq52jlv9eau09kzyAe0QbJ2VvyTVLZ7WfB8I7Lak=
+  </data>
+ </layer>
+ <layer name="Trunks" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzdV8sOgzAMK7cxBnvw2Pb/Pzpz24FUcVIiiqVIHJrGwm7SphSHrknphuibwKJ/eKLuCzGS9UvxfiP/g/iS+zC8L1jTIq5kjVwew3vAmjviQda35G3pMuF7RixkfUtehC45ROiyogR3qy4rPNxLwMO9dmh7n9cjUr72jHk9IuVrz5jXI7V6jNWdmaWavVndmZ6t2ZvVjenZXk/sMXMYnKVvS56Nus9KnrXeZ1lInrXeZ3Oo7Y1Qej6y/zRqPkr8o+bjWXrJ0fADohoMNA==
+  </data>
+ </layer>
+ <layer name="Treetops" width="32" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztV7sSwjAMSwbg/38QGIAB2CgDMICydchDsl1Y0J06cHHrWKoaUhrjAT7BF7G2h1VOaQ1uslb3LhfUZKJuC+7AvdxdG62+b+AE3me/HcAjeBKfYem7pssZvIBX8fmWvhVdRrD0rfjJ44uaziqsviiIeP+sviiI1NkCa25EgNXemzutelZ7j7969az2Hn/16n+pPQNVdyVLmHuruitZwtxb1V3JEq+narP+pp+izk3W709Ubrf2MeoratatfUTNd4TWPpb4Lipal74iziZzqDNl17M5qc6UXc/mpOpZdr03y5b4X6PAe77wwju/P+r4ANyTimo=
+  </data>
+ </layer>
+ <layer name="collision" width="32" height="32" opacity="0.31">
+  <data encoding="base64" compression="zlib">
+   eJzllssNACAIQ3X/MV3EqzEh/qBQeWehBRKwFCytggWV9Jl8r97u5kL36iYu4ly8PUlY+ELVqqkTdT7svPZVirfeV1rxGUDvu53cp/qat/QXrOb6S//GOjxqet2NGUH9Q1H3Kaq+FbNfNv8MdLPHJWk=
+  </data>
+ </layer>
+</map>
