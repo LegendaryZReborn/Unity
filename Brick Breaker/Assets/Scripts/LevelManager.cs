@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
 
 	private Scene currentScene;
+
 	public void LoadLevel(string name)
 	{
-		Debug.Log ("Load Level Requested: " + name);
+		//Load level by name
 		SceneManager.LoadScene(name);
 	}
 
 	public void QuitRequest()
 	{	
-		Debug.Log ("Quit Requested");
+		//Quit
 		Application.Quit ();
 	}
 

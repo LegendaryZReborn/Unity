@@ -9,7 +9,6 @@ public class MusicPlayer : MonoBehaviour {
 	void Awake () {
 		if (instance != null) {
 			Destroy (gameObject);
-			Debug.Log ("Duplicate Music Player Destroyed");
 		} 
 		else
 		{

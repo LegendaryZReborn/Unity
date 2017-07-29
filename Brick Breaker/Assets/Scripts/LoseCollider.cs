@@ -10,14 +10,20 @@ public class LoseCollider : MonoBehaviour {
 		levelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
 
-	void OnTriggerEnter2D(Collider2D collider)
+	void Update()
 	{
-		levelManager.LoadLevel("Lose_Screen");
+		GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
+
+		if(balls.Length < 1)
+			levelManager.LoadLevel("Lose_Screen");
 	}
 
-	void OnCollisionEnter2D(Collision2D collision)
+	void OnTriggerEnter2D(Collider2D collider)
 	{
-		print ("Collision");
+		
+		Destroy(collider.gameObject); 
+
 	}
+
 }
  
