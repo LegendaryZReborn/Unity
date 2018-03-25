@@ -12,7 +12,7 @@ public class InventoryUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject selectedSlot = GameObject.Find("SelectedSlot");
+		GameObject selectedSlot = GameObject.Find("SlotImg");
 
 		if(selectedSlot){
 			selectedItemSlotS = selectedSlot.GetComponent<ItemSlot>();

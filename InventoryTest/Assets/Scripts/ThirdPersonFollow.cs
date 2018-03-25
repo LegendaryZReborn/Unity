@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Reference: https://code.tutsplus.com/tutorials/unity3d-third-person-cameras--mobile-11230
 public class ThirdPersonFollow : MonoBehaviour {
 
 	public Transform target;

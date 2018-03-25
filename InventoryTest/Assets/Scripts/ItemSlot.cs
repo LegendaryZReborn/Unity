@@ -4,9 +4,12 @@ using UnityEngine.EventSystems;
 
 public class ItemSlot : MonoBehaviour{
 
+	//public Sprite defaultSprite;
+
 	private Image slotImage;
 	private Item item;
 	private Inventory inventory;
+
 
 	void Awake(){
 		slotImage = GetComponent<Image>();
@@ -20,6 +23,10 @@ public class ItemSlot : MonoBehaviour{
 		if(otherItem){
 			slotImage.sprite = otherItem.ItemSprite;
 			item = otherItem; 
+		}
+		else{
+			slotImage.sprite = null;
+			item = null; 
 		}
 	}
 

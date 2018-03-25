@@ -6,45 +6,50 @@ using UnityEditor;
 public class ObjectHandler : MonoBehaviour {
 
 	private Inventory inventory;
-	private GameObject spawnedObject;
+	private GameObject dynamic;
 	// Use this for initialization
 	void Start () {
 		inventory = Inventory.instance;
+		dynamic = GameObject.Find("Dynamic");
+
+		if(!dynamic){
+			Debug.Log("Dynamic Game Object not found!");
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.J)){
+		if(Input.GetKeyDown(KeyCode.Mouse0)){
 			spawnObject();
 		}
 
-		rotateObject();
 	}
 
 	void spawnObject(){
 		if(inventory.SelectedItem != null){
 			string name = inventory.SelectedItem.ItemName;
-
-			if(spawnedObject != null){
-				Destroy(spawnedObject);
-			}
-
 			GameObject prefab = AssetDatabase.LoadAssetAtPath("Assets/Prefabs/" + name + ".prefab", typeof(GameObject)) as GameObject;
 
-			spawnedObject = Instantiate(prefab) as GameObject;
-			spawnedObject.transform.parent = this.transform;
-			spawnedObject.transform.localPosition = Vector3.zero;
-		
+			if(prefab){
+				GameObject spawnedObject = Instantiate(prefab, this.transform.position, this.transform.rotation) as GameObject;
+				spawnedObject.transform.parent = dynamic.transform;	
+				alignToGround(spawnedObject);
+			}
 		}
 		else{
 			Debug.Log("No Item Selected!");
 		}
 	}
 
-	void rotateObject(){
-		if(spawnedObject != null){
-			Vector3 rotationAxis = new Vector3(1f, 0f, 1f);
-			this.transform.RotateAround(this.transform.position, rotationAxis, 180f * Time.deltaTime);
+	void alignToGround(GameObject g){
+		RaycastHit hit;
+
+		if(Physics.Raycast(g.transform.position, -Vector3.up, out hit)){
+			Vector3 target = hit.point;
+			Bounds bounds = g.GetComponent<MeshFilter>().mesh.bounds;
+			target.y += bounds.extents.y;
+
+			g.transform.position = target;
 		}
 	}
 }
